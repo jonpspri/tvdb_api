@@ -20,7 +20,7 @@ __all__ = ["tvdb_error", "tvdb_userabort", "tvdb_notauthorized", "tvdb_shownotfo
 logging.getLogger(__name__).warning(
     "tvdb_exceptions module is deprecated - use classes directly from tvdb_api instead")
 
-from tvdb_api import (
+from .tvdb_api import (
     tvdb_error, tvdb_userabort, tvdb_notauthorized, tvdb_shownotfound,
     tvdb_seasonnotfound, tvdb_episodenotfound,
     tvdb_resourcenotfound, tvdb_invalidlanguage,
